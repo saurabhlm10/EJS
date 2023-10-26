@@ -1,0 +1,10 @@
+<%- include('partials/header', { title: 'Greetings' }) %>
+<% if(timeOfDay === 'morning') { %>
+  <h2>Good Morning, <%= name %>!</h2>
+<% } else if(timeOfDay === 'evening') { %>
+  <h2>Good Evening, <%= name %>!</h2>
+<% } else { %>
+  <h2>Hello, <%= name %>!</h2>
+<% } %>
+<a href="/">Go back</a>
+<%- include('partials/footer') %>

@@ -1,0 +1,9 @@
+<%- include('partials/header', { title: 'User List' }) %>
+<h2>List of Users</h2>
+<ul>
+  <% users.forEach(function(user) { %>
+  <li><%= user %></li>
+  <% }); %>
+</ul>
+<a href="/">Go back</a>
+<%- include('partials/footer') %>
